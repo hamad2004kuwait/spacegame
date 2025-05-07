@@ -1,0 +1,25 @@
+Integration Test Log for SpaceGame
+Author: Hamad Al Nassar
+Date: April 27th, 2025
+
+Integration Test 1: setup() and movePlayer(char move)
+
+Test Steps:
+1. Initialize the game by calling setup().
+2. Verify that the player starts at position (0,0) and has full fuel (MAX_FUEL).
+3. Call printMap() to visually confirm that resources ('R') and asteroids ('X') are placed on the map.
+4. Simulate a move command toward a known empty space using movePlayer('d').
+5. Confirm that the player's position updates correctly and fuel is reduced by 1.
+6. Simulate a move command toward a resource ('R') using movePlayer('s') and confirm resource collection.
+7. Simulate an invalid move attempt outside the map boundary and ensure proper handling without crashing.
+8. Simulate a move onto an asteroid ('X') and confirm the game exits as expected.
+
+Expected Outcome:
+- The program should initialize the map, player, and resources correctly through setup().
+- Functions should correctly integrate to move the player, update the map, adjust fuel, and detect collisions or resource pickups.
+
+Result: PASSED
+
+---
+
+End of Integration Test Log
